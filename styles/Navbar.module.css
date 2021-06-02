@@ -13,7 +13,7 @@
     list-style: none;
   }
   
-  .nav ul li a {
+  .nav ul li {
     margin: 5px 15px;
     font-weight: bold;
   }
@@ -22,3 +22,4 @@
     position: absolute;
     right: 50px;
   }
+
