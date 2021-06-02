@@ -1,9 +1,21 @@
+import { useState } from 'react'
 import Link from 'next/link';
 import navStyles from '../styles/Navbar.module.css';
-import { Button, useColorMode } from '@chakra-ui/react';
+import { Button, useColorMode, Icon } from '@chakra-ui/react';
+import { SunIcon, MoonIcon } from '@chakra-ui/icons'
+import { FaGithub, FaLinkedin, FaTwitterSquare, FaDev, FaDiscord } from "react-icons/fa";
 
 function Navbar() {
+    const [mode, setMode] = useState("light");
     const { toggleColorMode } = useColorMode();
+    const onClickModeHandler = () =>{
+        toggleColorMode();
+        if(mode==="light"){
+            setMode("dark");
+        }else{
+            setMode("light");
+        }
+    }
     return (
         <nav className={navStyles.nav}>
                 <ul>
@@ -13,12 +25,12 @@ function Navbar() {
                     <li><Link href="/blogs">Blogs</Link></li>
                 </ul>
                 <ul className={navStyles.social}>
-                    <li><Link href="/blogs">Github</Link></li>
-                    <li><Link href="/blogs">LinkedIn</Link></li>
-                    <li><Link href="/blogs">Twitter</Link></li>
-                    <li><Link href="/blogs">Dev</Link></li>
-                    <li><Link href="/blogs">Discord</Link></li>
-                    <li><Button onClick={toggleColorMode}>color</Button></li>
+                    <li><Link href="/blogs"><Icon w={6} h={6} as={FaGithub} /></Link></li>
+                    <li><Link href="/blogs"><Icon w={6} h={6} as={FaLinkedin} /></Link></li>
+                    <li><Link href="/blogs"><Icon w={6} h={6} as={FaTwitterSquare} /></Link></li>
+                    <li><Link href="/blogs"><Icon w={6} h={6} as={FaDev} /></Link></li>
+                    <li><Link href="/blogs"><Icon w={6} h={6} as={FaDiscord} /></Link></li>
+                    <li><Button onClick={onClickModeHandler}>{mode==="light"?<SunIcon />:<MoonIcon />}</Button></li>
                 </ul>
         </nav>
     )
