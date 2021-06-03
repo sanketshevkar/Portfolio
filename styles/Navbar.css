@@ -1,0 +1,50 @@
+.topnav {
+  overflow: hidden;
+}
+
+.social{
+  position: absolute;
+  right: 55px;
+}
+
+.topnav li {
+  float: left;
+  display: block;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+@media screen and (max-width: 800px) {
+  .topnav li:not(.socialIcon) {
+    display: none;
+  }
+  .topnav li.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .topnav.responsive {
+    position: relative;
+  }
+  .topnav.responsive li.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive li {
+    float: none;
+    display: block;
+  }
+
+  .topnav.responsive ul {
+    margin: 4rem 0rem 3rem 0rem;
+  }
+}

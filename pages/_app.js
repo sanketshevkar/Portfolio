@@ -1,6 +1,7 @@
 import '../styles/globals.css';
 import { ChakraProvider } from "@chakra-ui/react";
 import Navbar from '../components/Navbar';
+import '../styles/Navbar.css'
 
 function MyApp({ Component, pageProps }) {
   return(
