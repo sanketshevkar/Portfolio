@@ -1,21 +1,20 @@
 import { useState } from 'react'
 import Link from 'next/link';
-import { Button, useColorMode, Icon } from '@chakra-ui/react';
+import { Button, useColorMode, Icon, Avatar } from '@chakra-ui/react';
 import { SunIcon, MoonIcon } from '@chakra-ui/icons'
 import { FaGithub, FaLinkedin, FaTwitterSquare, FaDev, FaDiscord } from "react-icons/fa";
 
 function Navbar() {
-    const [mode, setMode] = useState("light");
     const [navState, setNavState] = useState("topnav");
-
+    const [mode, setMode] = useState("light");
     const { toggleColorMode } = useColorMode();
 
     const onClickModeHandler = () =>{
         toggleColorMode();
-        if(mode==="light"){
-            setMode("dark");
-        }else{
+        if(mode==="dark"){
             setMode("light");
+        }else{
+            setMode("dark");
         }
     }
 
@@ -26,12 +25,11 @@ function Navbar() {
             setNavState("topnav");
         }
     }
-    
+
     return (
       <nav className={`${navState}`}>
         <ul>
-          <li><Link href="/">Home</Link></li>
-          <li><Link href="/experience">Experience</Link></li>
+          <li><Link href="/"><Avatar name="Sanket Shevkar" src="https://i.imgur.com/Lbt8FzG.png" /></Link></li>
           <li><Link href="/projects">Projects</Link></li>
           <li><Link href="/blogs">Blogs</Link></li>
           <li className="icon" onClick={onClickNavHandler}><Button>&#9776;</Button></li>
@@ -42,7 +40,7 @@ function Navbar() {
           <li className="socialIcon"><Link href="/blogs"><Icon w={6} h={6} as={FaTwitterSquare} /></Link></li>
           <li className="socialIcon"><Link href="/blogs"><Icon w={6} h={6} as={FaDev} /></Link></li>
           <li className="socialIcon"><Link href="/blogs"><Icon w={6} h={6} as={FaDiscord} /></Link></li>
-          <li className="socialIcon"><Button onClick={onClickModeHandler}>{mode==="light"?<SunIcon />:<MoonIcon />}</Button></li>
+          <li className="socialIcon"><Button onClick={onClickModeHandler}>{mode==="light"?<MoonIcon />:<SunIcon />}</Button></li>
         </ul>
       </nav>
     )
