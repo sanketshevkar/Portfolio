@@ -1,8 +1,11 @@
-import { Flex, WrapItem, Container, Wrap } from '@chakra-ui/react';
+import { Flex, WrapItem, Container, Wrap, Text } from '@chakra-ui/react';
+import ExternalLinkIcon from '@chakra-ui/icons';
 import Head from 'next/head';
+import Link from 'next/link';
 import _ from 'lodash';
 import Assets from '../components/About/Assets';
 import Description from '../components/About/Description';
+import Form from '../components/About/Form';
 
 
 function index(){
@@ -15,7 +18,7 @@ function index(){
       </Head>
       <Wrap>
         <WrapItem><Container><Assets /></Container></WrapItem>
-        <WrapItem><Container maxW="container.md"><Description /></Container></WrapItem>
+        <WrapItem><Container maxW="container.md"><Description /><Form /></Container></WrapItem>
       </Wrap>
     </Flex>
   )
