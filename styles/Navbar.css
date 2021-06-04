@@ -1,5 +1,6 @@
 .topnav {
   overflow: hidden;
+  margin-bottom: 5rem;
 }
 
 .social{
@@ -20,8 +21,8 @@
   display: none;
 }
 
-@media screen and (max-width: 800px) {
-  .topnav li:not(.socialIcon) {
+@media screen and (max-width: 700px) {
+  .topnav li:not(.socialIcon, :first-child) {
     display: none;
   }
   .topnav li.icon {
@@ -30,7 +31,7 @@
   }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 700px) {
   .topnav.responsive {
     position: relative;
   }
@@ -45,6 +46,6 @@
   }
 
   .topnav.responsive ul {
-    margin: 4rem 0rem 3rem 0rem;
+    margin-bottom: 3rem;
   }
 }

@@ -1,0 +1,11 @@
+@media screen and (max-width: 700px) {
+  .chakra-wrap__list{
+    display: block;
+    justify-content: center;
+    margin: auto;
+  }
+
+  h1.chakra-heading{
+    font-size: x-large
+  }
+}
