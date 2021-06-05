@@ -1,0 +1,39 @@
+{
+    "projectsList": [
+        {
+            "name": "Project Name",
+            "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum",
+            "github": "https://github.com/sanketshevkar/Debately",
+            "website": "https://github.com/sanketshevkar/Debately",
+            "stack": [{"tech": "tech", "color": "teal"}, {"tech": "tech", "color": "green"}, {"tech": "tech", "color": "red"}, {"tech": "tech", "color": "black"}]
+        },
+        {
+            "name": "Project Name",
+            "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum",
+            "github": "https://github.com/sanketshevkar/Debately",
+            "website": "https://github.com/sanketshevkar/Debately",
+            "stack": [{"tech": "tech", "color": "teal"}, {"tech": "tech", "color": "green"}, {"tech": "tech", "color": "red"}, {"tech": "tech", "color": "black"}]
+        },
+        {
+            "name": "Project Name",
+            "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum",
+            "github": "https://github.com/sanketshevkar/Debately",
+            "website": "https://github.com/sanketshevkar/Debately",
+            "stack": [{"tech": "tech", "color": "teal"}, {"tech": "tech", "color": "green"}, {"tech": "tech", "color": "red"}, {"tech": "tech", "color": "black"}]
+        },
+        {
+            "name": "Project Name",
+            "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum",
+            "github": "https://github.com/sanketshevkar/Debately",
+            "website": "https://github.com/sanketshevkar/Debately",
+            "stack": [{"tech": "tech", "color": "teal"}, {"tech": "tech", "color": "green"}, {"tech": "tech", "color": "red"}, {"tech": "tech", "color": "black"}]
+        },
+        {
+            "name": "Project Name",
+            "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum",
+            "github": "https://github.com/sanketshevkar/Debately",
+            "website": "https://github.com/sanketshevkar/Debately",
+            "stack": [{"tech": "tech", "color": "teal"}, {"tech": "tech", "color": "green"}, {"tech": "tech", "color": "red"}, {"tech": "tech", "color": "black"}]
+        }
+    ]
+}
