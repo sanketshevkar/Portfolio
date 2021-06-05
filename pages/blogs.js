@@ -1,11 +1,11 @@
 import Head from 'next/head';
-import { Stack, Flex } from '@chakra-ui/react';
+import { Stack } from '@chakra-ui/react';
 import Card from '../components/Blog/Card';
 import data from '../data.json';
 
 function blogs() {
     return (
-        <Flex>
+        <Stack>
             <Head>
                 <title>Blogs</title>
                 <meta property="og:title" content="My page title" key="title" />
@@ -14,7 +14,7 @@ function blogs() {
             <Stack margin="2rem" spacing={8}>
                 {data.blogsList.map((blog)=><Card blog={blog} />)}
             </Stack>
-        </Flex>
+        </Stack>
     )
 }
 
