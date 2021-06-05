@@ -38,8 +38,8 @@ function Navbar() {
           <li className="socialIcon"><Link href="/blogs"><Icon w={6} h={6} as={FaGithub} /></Link></li>
           <li className="socialIcon"><Link href="/blogs"><Icon w={6} h={6} as={FaLinkedin} /></Link></li>
           <li className="socialIcon"><Link href="/blogs"><Icon w={6} h={6} as={FaTwitterSquare} /></Link></li>
-          <li className="socialIcon"><Link href="/blogs"><Icon w={6} h={6} as={FaDev} /></Link></li>
-          <li className="socialIcon"><Link href="/blogs"><Icon w={6} h={6} as={FaDiscord} /></Link></li>
+          <li><Link href="/blogs"><Icon w={6} h={6} as={FaDev} /></Link></li>
+          <li><Link href="/blogs"><Icon w={6} h={6} as={FaDiscord} /></Link></li>
           <li className="socialIcon"><Button onClick={onClickModeHandler}>{mode==="light"?<MoonIcon />:<SunIcon />}</Button></li>
         </ul>
       </nav>
