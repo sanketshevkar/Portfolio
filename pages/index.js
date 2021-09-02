@@ -16,10 +16,10 @@ function index(){
         <meta property="og:title" content="My page title" key="title" />
         <link rel="icon" href="https://i.imgur.com/r84NYEK.png" />
       </Head>
-      <Wrap>
+      {/* <Wrap>
         <WrapItem><Container><Assets /></Container></WrapItem>
         <WrapItem><Container maxW="container.md"><Description /><Form /></Container></WrapItem>
-      </Wrap>
+      </Wrap> */}
     </Flex>
   )
 }
